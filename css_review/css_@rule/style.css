@@ -1,0 +1,17 @@
+.char{
+	border:2px solid blue;
+	margin:2rem 0;
+}
+.keyframe{
+	border:2px solid aqua;
+	
+}
+.img{
+	animation: moveit 1s 3;
+	position:relative;
+}
+@keyframes moveit{
+	
+	 from {left:0;}
+     to {left:100%;}
+}

@@ -1,0 +1,114 @@
+body{
+	margin:0px;
+}
+.a{
+	background-color:blue;
+	color:white;
+	text-align:center;
+}
+ol li {
+	font-size:1.25rem;
+}
+.bg{
+	background-color:rgba(205, 138, 173, 0.8);
+}
+.ta-l{
+	text-align:left;
+}
+.ta-c{
+	text-align:center;
+}
+.ta-r{
+	text-align:right;
+}
+.ta-j{
+	text-align:justify;
+}
+.ta-ln{
+	text-align-last:center;
+}
+.ta-dir{
+   
+}
+.ta-vert{
+	vertical-align:right;
+}
+.td-ov{
+	text-decoration:overline;
+}
+.td-th{
+	text-decoration:line-through;
+}
+.td-ul{
+	text-decoration:underline;
+}
+.td-col{
+	text-decoration:underline;
+	text-decoration-color:red;
+}
+.td-sty{
+	text-decoration:underline;
+	text-decoration-style:dotted;
+	text-decoration-color:blue;
+}
+.td-thic {
+	text-decoration:underline;
+	text-decoration-style:dotted;
+	text-decoration-color:yellow;
+	text-decoration-thickness: 5px;
+}
+.tt-up{
+	text-transform:uppercase;
+}
+.tt-lo{
+	text-transform:lowercase;
+}
+.tt-cap{
+	text-transform:capitalize;
+}
+.ts-ind{
+	text-indent:40px;
+}
+.ts-lets{
+	letter-spacing:10px;
+}
+.ts-ws{
+	word-spacing:10px;
+}
+.ts-wh{
+	white-space:nowrap;
+	font-size:24px;
+}
+.tx-sh{
+	text-shadow:2px 2px;
+}
+.fo-serif{
+	font-family: 'Bree Serif', serif;
+}
+.fo-sserif{
+	font-family: 'Roboto', sans-serif;
+}
+.fo-mono{
+	font-family: 'Share Tech Mono', monospace;
+}
+.normal{
+	font-style:normal;
+}
+.italic{
+	font-style:italic;
+}
+.oblique{
+	font-style:oblique;
+}
+.norm{
+	font-weight:normal;
+}
+.bold{
+	font-weight:bold;
+}
+.nor{
+	font-variant:normal;
+}
+.small{
+	font-variant:small-caps;
+}

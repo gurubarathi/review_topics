@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    section{
+        position:relative;
+        height:400px;
+
+    }
+    .div1{
+        width:200px;
+        height:200px;
+        background-color: rgba(22, 104, 177, 0.705);
+        position:absolute;
+        z-index:3;
+        left:0;
+        top:0;
+        content:" ";
+    }
+    .div2{
+        width:200px;
+        height:200px;
+        background-color: rgba(230, 55, 55, 0.705);
+        position:absolute;
+        z-index:5;
+        left:50px;
+        top:30px;
+        content:" ";
+
+    }
+    .div3{
+        width:200px;
+        height:200px;
+        background-color: rgba(228, 214, 17, 0.705);
+        position:absolute;
+        z-index:3;
+        left:100px;
+        top:60px;
+        content:" ";
+    }
+    .div4{
+        width:200px;
+        height:200px;
+        background-color: rgba(20, 233, 151, 0.884);
+        position:absolute;
+        z-index:4;
+        left:150px;
+        top:90px;
+        content:" ";
+    }
+    .over1{
+       width:400px;
+       height:300px;
+       text-align: center;
+       text-overflow: clip;
+    }
+    .sec2{
+        background-color: rgb(191, 207, 41);
+        width:200px;
+       height:200px;
+       overflow-x:scroll;
+       overflow-y: hidden;
+
+    }
+    .div5{
+        width:300px;
+        height:300px;
+        
+        }
+    .div5 img{
+        width:400px;
+        height:400px;
+    }
+    
+</style>
+<body>
+    <h3>z-index is the stack order of elements happened in a place.</h3>
+    <section>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <div class="div4"></div>
+    </section>
+    <br>
+    <h3>overflow
+    <ul>
+     <li>visible</li>
+     <li>hidden</li>
+     <li>scroll</li>
+     <li>auto</li>
+    </ul></h3>
+    <section class="sec2">
+    <p class="over1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo eius dolores quos atque soluta officiis debitis vitae consequuntur iure delectus nulla architecto illum corporis fugit, beatae, harum earum magnam repudiandae! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium reiciendis quam consectetur neque! Modi reprehenderit neque dolor, maxime quae officiis repellat nobis maiores illo corrupti. Nobis quaerat accusantium quos quisquam.</p>
+    </section>
+
+    <div class="div5">
+        <img src="over.jpg" alt="imf">
+
+    </div>
+    
+
+</body>
+</html>

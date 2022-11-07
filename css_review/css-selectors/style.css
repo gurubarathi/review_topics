@@ -1,0 +1,111 @@
+/*1.Simple selectors*/
+#css{
+	color:red;
+	/*id selector*/
+}
+.html{
+	color:blue;
+	/*class selector*/
+}
+.frontend h3,p,h2{
+	color:gray;
+	/*group selector*/
+}
+* h4{
+	color:green;
+	/*global or universal selector*/
+}
+/*2.Combination Selectors*/
+
+div  li{
+	color:blue;
+	/*Descendant selector ---style all list element inside the div--nested element also styled */
+}
+.database > p{
+	color:red;
+	/*child selector >-- style only open elements inside it--not style nested elements */
+}
+.database + p{
+	color:blue;
+	/*Adjacent siblings selectors + --apply style after it end and style  only one element after it end */
+}
+.general~p{
+	color:rgba(14, 243, 21, 0.8);
+	/*general sibling selector ~ ---applying style after it ended and style all element  */
+}
+/*3.psuedo class selector*/
+
+.websites a:link{
+	color:red;
+	/*link indicates unvisited links*/
+}
+.websites a:visited{
+	color: green;
+	/*it indicates visited links*/
+}
+.websites a:hover{
+	background-color:rgba(245, 129, 39, 0.8);
+	font-size:30px;
+	/*when mouse over on links */
+}
+.websites a:active{
+	color:red;
+}	
+	/*when clicking the links*/
+.psuedo p:first-child{
+	color:red;
+	/*first-child means if in section or any div having it a first child*/
+	/*last-child also available*/
+}	
+input:checked{
+	width:20px;
+	height:30px;
+	color:red;
+	/*checked means the input checkbox and radio type style*/
+}
+.table2 tr:nth-child(odd){
+	background-color:blue;
+}
+
+/*4.psuedo element selector*/
+
+.frontend h1::first-letter{
+	font-size:50px;
+	color:rgba(110, 129, 39, 0.8);
+}
+.frontend h2::first-line{
+	letter-spacing:10px;
+}
+.frontend h3::before{
+	content:"<!DOCTYPE html>";
+}
+.frontend p::after{
+	content:"/**/";
+}
+::marker{
+	color:red;
+	font-size:30px;
+}
+::selection{
+	color:green;
+	background-color:black;
+}
+
+
+/*5.Attribute selector*/
+ /*[attribute should be inside]*/
+
+input{
+	width:150px;
+	background-color:rgba(110, 56, 39, 0.46);
+}
+ input [placeholder ="password"]{
+	font-size:30px;
+	color:red;
+}
+[title~="mentor"]{
+	border:2px solid red;
+}
+table{
+	border-collapse:collapse;
+}

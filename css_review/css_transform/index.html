@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+	
+    #div5{
+	  width: 100px;
+	  height: 100px;
+	  background:aqua;
+	  transition: all 5s linear ;
+	}
+	#div5:hover{
+	  transform: rotate(360);
+	  transform-orgin:(20%,20%);
+	}
+	
+	 #div6{
+	  width: 100px;
+	  height: 100px;
+	  background:aqua;
+	  transition: all 2s ;
+	 }
+	   #div6:hover{
+	  transform:translate(100px,200px);
+	 }
+	 
+	 #div7{
+	  width: 100px;
+	  height: 100px;
+	  background:aqua;
+	  transition: all 2s ease-in-out;
+	 }
+	 	 #div7:hover{
+	  transform:matrix(1,20,40,2,100,100);
+	 }
+	 
+	 #div8{
+	  width: 100px;
+	  height: 100px;
+	  background:aqua;
+	  transition: all 2s;
+	}
+		 #div8:hover{
+	  transform:scale(3,2);
+	 }
+	 #div9{
+	  width: 100px;
+	  height: 100px;
+	  background:aqua;
+	  transition: all 2s ;
+	 }
+	 	 #div9:hover{
+	  transform:skew(100deg,20deg);
+	 }
+	 #div10{
+	  width: 100px;
+	  height: 100px;
+	  background:aqua;
+	  transition: all 2s ;
+	 }
+	 	 #div10:hover{
+	  transform:rotateX(140deg);
+	 }
+	</style>
+</head>
+<body>
+  <h2>transform: none or transform-functions(x,y);</h2>
+  <div id="div5">Rotate(60deg)</div><br>
+	<div id="div6">translate(x,y)</div><br>
+	
+	<p>Matrix have syntax(rotate, skew, scale, and translate)
+	 Transform:matrix(a,b,c,d,e,f) where{a,d are scale,}{b,c are skew}{e,f are translate}</p>
+	 
+	<div id="div7">matrix()</div><br>
+	<div id="div8">scale()</div><br>
+	<div id="div9">skewy()</div><br>
+	<div id="div10">:)</div><br>
+</body>
+</html>

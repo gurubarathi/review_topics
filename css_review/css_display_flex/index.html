@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+	 <!--display properties-->
+	  .inline1,.inline2,.inline3{
+	   display:inline;
+	  }
+	  
+	  span{
+	   display:block;
+	   font-size:1.5rem;
+	  }
+	  
+	  h3{
+	   font-size:1.5rem;
+	  }
+	  
+	  h2{
+	   background-color:darkcyan;
+	   text-align:center;
+	  }
+	  
+	  .container1{
+	    display:flex;
+	   }
+	   
+	   li{
+	    display:inline-block;
+		width:2rem;
+		height:5rem;
+		background-color:chocolate;
+		}
+		
+	   .none{
+	    display:none;
+	    }
+	   
+	   .hidden{
+	    visibility:hidden;
+	    }
+	    a{
+		 display:list-item;
+		}
+		
+	   <!--display properties end-->
+	   
+	    <!--flex properties start-->
+	.container2{
+		height:300px;
+		width:900px;
+		display:flex;
+		
+		}
+		 #Geeks {
+        width: 800px;
+        height: 200px;
+        border: 1px solid black;
+        display: flex;
+    }
+     
+    #Geeks div {
+        
+    }
+     
+    .GFG1 {
+        background-color: green;
+		flex-grow: 3;
+    }
+     
+    .GFG2 {
+        background-color: lightgreen;
+		flex-shrink:1;
+    }
+     
+    .GFG3 {
+        background-color: blue;
+		flex-basis:200px;
+    }
+	    .GFG6 {
+        background-color: white;
+		flex-grow: 2;
+    }
+     
+    .GFG4 {
+        background-color: red;
+		flex-shrink:0;
+    }
+     
+    .GFG5 {
+        background-color: yellow;
+		flex-basis:150px;
+    }
+	
+	   <!--flex properties end-->
+	  
+	</style>
+	
+</head>
+<body>
+      <!--display properties-->
+	   <h2>Here Block level elements are converted into Inline elements</h2>
+	    <br>
+	     <h3 class="inline1">k.</h3>
+		  <h3 class="inline2">guru</h3>
+		 <h3 class="inline3">Barathi</h3> 
+		 <br><br>
+		 <hr>
+		 <h2>Here inline elements are converted into block elements </h2>
+		 <span>inline elements are converted </span><span>into block levle elements</span>
+	    <br><br>
+	    <hr>
+		
+	   <h2>Inline Block</h2>
+	   <p>The diffeerence between inline and inline-block 
+	      we can't put height,width in inline but in in-block we can add each element height and widht.</p>
+	     <ul> 
+		    <li>A</li>
+		    <li>B</li>
+		    <li>C</li>
+		    <li>D</li>
+		 </ul>
+	   <hr>
+	   
+	   <h2>Display:None</h2>
+	   <div class="none">
+	     <h4>IAM Display None<h4>
+	   </div>
+	   <hr>
+	   
+	    <h2>Display:list-items</h2>
+	     <div class="atag">
+		<a href="">Home</a>
+		<a href="">Page</a>
+		<a href="">Like</a>
+		<a href="">Comment</a>
+		</div>
+		<hr>
+	   
+	   <h2>visibility:hidden;</h2>
+	     <div class="hidden">
+	     <h4>IAM Hidden Here<h4>
+	   </div>
+	   <hr>
+	    
+	   
+	   <!--display properties end-->
+	   
+	   <!--flex properties start-->
+	    <h2>Flex:1</h2>
+       <p>CSS flex Property :flex-grow,flex-shrink,flex-basis,flex: 1 0 auto;</p>
+	   <p>one value syntax take flex grow</p>
+	   <p>two value take flexgrow,flexshrink</p>
+	   <p>three value syntax grow,shrink,basis</p>
+	   <p>It is used to set the length of flexible items.</p>
+      <div id="Geeks">
+        <div class="GFG1"> nothing content</div>
+        <div class="GFG2"> Lite Content </div>
+        <div class="GFG3"> Special Content </div>
+		 <div class="GFG4"> Forces applied </div>
+        <div class="GFG5"> only mind knowa </div>
+        <div class="GFG6"> Nonthing cannot be </div>
+      </div>
+	<!--flex properties end-->
+   </body>
+</html>
