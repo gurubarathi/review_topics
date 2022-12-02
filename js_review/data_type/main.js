@@ -96,6 +96,7 @@
             //Addding new property in last position
             car.type="petrol";
 
+
             //delete property
             //The delete operator  has no effect on variables or functions.
             //The delete keyword does not delete inherited properties, but if you delete a prototype //property, it will affect all objects inherited from the prototype.
@@ -103,7 +104,7 @@
              //(or) delete car.power
 
 
-            //renaming the property
+            //renaming the property //only copying the element
             car.newno=car.no;//copy &delete
             delete car.no;
 
@@ -118,7 +119,7 @@
   //  Any changes to a copy of an object will also change the original object:
 
         let objects={
-          array:[1,2,3,4,5],
+           array:[1,2,3,4,5],
           objecte:{name:"guru",age:21,Education:"BE"},
           functions:function allow(){
              let say =confirm("you are young?");
